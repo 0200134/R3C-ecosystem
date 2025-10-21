@@ -18,7 +18,7 @@ This project defines a **new industrial compiler model** —
 from legacy to safety, from safety to metal.  
 It’s not a replacement, but an **evolution of C and Rust into a transparent ecosystem**.
 
-[📊 View Ecosystem Diagram →](https://github.com/0200134/R3C-ecosystem/blob/main/docs/diagram.png)
+[📊 View Ecosystem Diagram →](https://github.com/0200134/R3C-ecosystem/blob/main/diagram.png)
 
 ---
 
