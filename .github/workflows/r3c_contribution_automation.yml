@@ -1,0 +1,44 @@
+name: 🪶 R3C Ecosystem — Auto Contribution System
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  auto-label-issues:
+    name: 🏷️ Auto Label New Issues
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issues'
+    steps:
+      - name: Add 'good first issue' label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: good first issue, help wanted
+
+  auto-welcome:
+    name: 🎉 Welcome New Contributors
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-message: |
+            🪶 **Welcome to the R3C Ecosystem!**
+            Your contribution helps build the next-generation LLVM-free toolchain.  
+            We appreciate every PR — from typo fixes to core compiler improvements.  
+            Feel free to join discussions and open new ideas at any time.
+
+  auto-merge:
+    name: 🔄 Auto Merge Simple PRs
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: pascalgn/automerge-action@v0.15.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_LABELS: documentation, typo, ci-pass
+          MERGE_METHOD: squash
+          MERGE_COMMIT_MESSAGE: "docs: auto-merged R3C community contribution"
