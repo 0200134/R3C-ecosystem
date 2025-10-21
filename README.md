@@ -1,6 +1,10 @@
 # 🪶 R3C Ecosystem  
 **“Modern compilers must learn to breathe without LLVM.”**
 
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-fermenting-blue.svg)
+![Language](https://img.shields.io/badge/core-C++_→_Rust_→_ASM-orange.svg)
+
 ---
 
 ## 🧱 Overview
@@ -20,6 +24,9 @@ Its structure unites **C++ → Rust → ASM**, forming a long-term, LLVM-free, s
 | 📦 Package System | [cpppm](https://github.com/0200134/cpppm) | C++/Rust hybrid package manager | ⚙️ Growing |
 | 🌿 Long-Term Sustain | [Rust-ltss](https://github.com/0200134/Rust-ltss) | Industrial Long-Term Sustain System (LTSS) | 🌾 Stable Growth |
 | 🔩 Embedded Layer | [Rust-embedded-ltss](https://github.com/0200134/Rust-embedded-ltss) | Bare-metal & IoT Rust toolchain independence | 🌱 Early Growth |
+| 🧬 Industrial Stable | [Rust-industrial-stable-edition-with-no-llvm](https://github.com/0200134/Rust-industrial-stable-edition-with-no-llvm) | LLVM-free Rust Industrial Stable Experiment | 🚧 Initial |
+
+📜 [View Full Ecosystem Map →](./links.md)
 
 All repositories share one purpose:  
 **inheritance over replacement, autonomy over dependency.**
@@ -58,23 +65,24 @@ maturing, sustaining, and spreading on its own.
 
 ---
 
-## 🧭 Ecosystem Diagram
+## 🔧 Compiler Evolution Flow
 
 
 
-    ┌──────────┐
-    │   C++    │   →   Foundation / ABI Layer
-    └────┬─────┘
-         │
-         ▼
-    ┌──────────┐
-    │   Rust   │   →   Safety / Concurrency Layer
-    └────┬─────┘
-         │
-         ▼
-    ┌──────────┐
-    │   ASM    │   →   Hardware / Metal Layer
-    └──────────┘
+
+┌──────────┐
+│   C++    │   →   Foundation / ABI Layer
+└────┬─────┘
+     │
+     ▼
+┌──────────┐
+│   Rust   │   →   Safety / Concurrency Layer
+└────┬─────┘
+     │
+     ▼
+┌──────────┐
+│   ASM    │   →   Hardware / Metal Layer
+└──────────┘
 
 
 
@@ -83,7 +91,9 @@ maturing, sustaining, and spreading on its own.
 
 
 ---
-License: MIT  
+
+## 🧩 License
+**MIT License**
 
 > R3C Ecosystem © 2025 — *Naturally fermented. Industrially sustained.*
 
