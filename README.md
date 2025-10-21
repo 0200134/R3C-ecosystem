@@ -1,18 +1,21 @@
 # 🪶 R3C Ecosystem  
-**“Modern compilers must learn to breathe without LLVM.”**
+> “Modern compilers must learn to breathe without LLVM.”
 
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-fermenting-blue.svg)
-![Language](https://img.shields.io/badge/core-C++_→_Rust_→_ASM-orange.svg)
+<p align="center">
+  <img src="https://img.shields.io/github/stars/0200134/r3c?style=for-the-badge&color=yellow" alt="Stars">
+  <img src="https://img.shields.io/github/license/0200134/r3c?style=for-the-badge&color=blue" alt="License">
+  <img src="https://img.shields.io/github/last-commit/0200134/r3c?style=for-the-badge&color=brightgreen" alt="Last Commit">
+  <img src="https://img.shields.io/badge/Language-C++%20%7C%20Rust%20%7C%20ASM-orange?style=for-the-badge" alt="Languages">
+</p>
 
 ---
 
-## 🧱 Overview
-**R3C Ecosystem** is the central hub connecting the independent toolchain projects born from the **R3C industrial compiler philosophy**.
+## 🧭 Overview
+**R3C Ecosystem** connects the toolchains built under one philosophy:  
+> **C++ → Rust → ASM**, unified into an **LLVM-free, self-sustaining compiler pipeline.**
 
-Its structure unites **C++ → Rust → ASM**, forming a long-term, LLVM-free, self-sustaining toolchain model for research and industry.
-
-> ⚙️ “From legacy to safety, from safety to metal.”
+This project defines a **new industrial compiler model** — from legacy to safety, from safety to metal.  
+It’s not a replacement, but an **evolution of C and Rust into a transparent ecosystem**.
 
 ---
 
@@ -20,80 +23,63 @@ Its structure unites **C++ → Rust → ASM**, forming a long-term, LLVM-free, s
 
 | Layer | Repository | Role | Status |
 |--------|-------------|------|--------|
-| 🧱 Core Compiler | [r3c](https://github.com/0200134/r3c) | Self-hosting C++ → Rust → ASM transpiler | 🔥 Mature |
-| 📦 Package System | [cpppm](https://github.com/0200134/cpppm) | C++/Rust hybrid package manager | ⚙️ Growing |
-| 🌿 Long-Term Sustain | [Rust-ltss](https://github.com/0200134/Rust-ltss) | Industrial Long-Term Sustain System (LTSS) | 🌾 Stable Growth |
-| 🔩 Embedded Layer | [Rust-embedded-ltss](https://github.com/0200134/Rust-embedded-ltss) | Bare-metal & IoT Rust toolchain independence | 🌱 Early Growth |
-| 🧬 Industrial Stable | [Rust-industrial-stable-edition-with-no-llvm](https://github.com/0200134/Rust-industrial-stable-edition-with-no-llvm) | LLVM-free Rust Industrial Stable Experiment | 🚧 Initial |
-
-📜 [View Full Ecosystem Map →](./links.md)
-
-All repositories share one purpose:  
-**inheritance over replacement, autonomy over dependency.**
+| 🧱 Core Compiler | [r3c](https://github.com/0200134/r3c) | Self-hosting C++ ↔ Rust transpiler | 🔥 Active |
+| 📦 Package Manager | [cpppm](https://github.com/0200134/cpppm) | C++ Package Manager for modular builds | 🧱 Stable |
+| 🌙 Nightly LTSS | [R3C-nightly-ltss](https://github.com/0200134/R3C-nightly-ltss) | Rust-to-ASM nightly testing channel | 🧪 Experimental |
+| 🪶 Ecosystem | **(This repo)** | Documentation hub & cross-project roadmap | 🧭 Hub |
 
 ---
 
-## 🧠 Philosophy
+## ⚙️ Philosophy
 
-> “C++ taught machines to think.  
-> Rust taught them to stay safe.  
-> ASM lets them act.”  
+> “Modern compilers must learn to breathe without LLVM.”
 
-R3C is not about replacing LLVM —  
-it’s about proving that modern compilers can **outgrow it.**
+- **C++** — heritage of power  
+- **Rust** — bridge of safety  
+- **ASM** — metal of truth  
 
-This ecosystem evolves naturally, with each repository serving as a cell in one industrial organism —  
-maturing, sustaining, and spreading on its own.
-
----
-
-## 🧬 Natural Growth Strategy
-1. **Let the projects ferment — commit only when necessary.**  
-2. **Keep documents unified and cross-linked.**  
-3. **Observe GitHub analytics, not hype.**  
-4. **Evolve slowly but irreversibly.**
-
-> “Silence is stability. Stability builds legacy.”
+The R3C Ecosystem redefines “compilation” as a **translation continuum**,  
+where languages cooperate instead of compete.
 
 ---
 
-## 🗺️ Future Roadmap
-- **2026 Q1** – Ecosystem documentation refinement  
-- **2026 Q3** – Cross-repo CI integration (Linux, macOS, Windows)  
-- **2027** – LTSS public release & embedded toolchain exposure  
-- **Beyond 2027** – R3C self-hosted compiler evolution  
+## 🧾 Goals
+
+- Establish an **independent build pipeline** for C++, Rust, and ASM  
+- Prototype a **cross-language ABI model**  
+- Support **industrial LTSS (Long-Term Sustain System)**  
+- Serve as a **research base** for future LLVM-independent compilers
 
 ---
 
-## 🔧 Compiler Evolution Flow
+## 🔗 Related Projects
 
-
-
-
-┌──────────┐
-│   C++    │   →   Foundation / ABI Layer
-└────┬─────┘
-     │
-     ▼
-┌──────────┐
-│   Rust   │   →   Safety / Concurrency Layer
-└────┬─────┘
-     │
-     ▼
-┌──────────┐
-│   ASM    │   →   Hardware / Metal Layer
-└──────────┘
-
-
-
-(Packaging, LTSS, and Embedded layers orbit around this core.)
-
-
+| Repo | Description |
+|------|--------------|
+| [🧱 R3C (Core)](https://github.com/0200134/r3c) | Main compiler: C++ ↔ Rust transpiler |
+| [📦 cpppm](https://github.com/0200134/cpppm) | C++ package and build manager |
+| [🌙 R3C-nightly-ltss](https://github.com/0200134/R3C-nightly-ltss) | Nightly LTSS experimental branch |
+| [🪶 R3C-ecosystem](https://github.com/0200134/R3C-ecosystem) | Central documentation & roadmap |
 
 ---
 
-## 🧩 License
-**MIT License**
+## 🧪 Branches
 
-> R3C Ecosystem © 2025 — *Naturally fermented. Industrially sustained.*
+| Branch | Purpose |
+|---------|----------|
+| `main` | Ecosystem documentation & index |
+| `r3c-core` | Core compiler integration |
+| `cpppm` | Packaging & dependency layer |
+| `ltss` | Rust-to-ASM nightly testing |
 
+---
+
+## 📜 License
+**MIT License**  
+Free for industrial research, education, and open collaboration.
+
+---
+
+<p align="center">
+  🪶 <b>R3C Ecosystem</b> — <i>“From safety to metal, without LLVM.”</i>
+</p>
