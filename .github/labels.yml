@@ -1,0 +1,51 @@
+# =====================================================
+# 🪶 R3C Ecosystem — Label Definitions
+# =====================================================
+
+# --- Core Discussion Types ---
+- name: idea
+  color: FFD700
+  description: 💡 New concept or experimental proposal for the R3C Ecosystem
+
+- name: architecture
+  color: 1E90FF
+  description: ⚙️ System or compiler structure design topic
+
+- name: philosophy
+  color: 9370DB
+  description: 🪶 Conceptual, theoretical, or compiler philosophy discussion
+
+- name: discussion
+  color: C0C0C0
+  description: 💬 General discussion or feedback thread
+
+# --- Project Phases ---
+- name: roadmap
+  color: 008000
+  description: 📅 Roadmap-related milestone or timeline proposal
+
+- name: documentation
+  color: 4682B4
+  description: 📖 Documentation or ecosystem description updates
+
+# --- Status Indicators ---
+- name: in-progress
+  color: FFA500
+  description: ⚙️ Currently under development or review
+
+- name: completed
+  color: 32CD32
+  description: ✅ Finished or integrated into the ecosystem
+
+- name: needs-review
+  color: FF4500
+  description: 🔍 Requires feedback or peer review
+
+# --- Miscellaneous ---
+- name: question
+  color: D3D3D3
+  description: ❓ Inquiry or clarification request
+
+- name: help-wanted
+  color: FF69B4
+  description: 🙋 Open call for contributors or collaborators
